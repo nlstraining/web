@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+                  <title>Form with JS</title>
+
+                  <script type="text/javascript">
+                   
+                          function checkForm(){
+                            var txt = document.getElementById("p1").innerText;
+                            alert(txt);
+                            var user = document.myform.user.value;
+                            var pwd = document.myform.pwd.value;
+                             //alert("entered function.." + user + ":"+ pwd);
+                            
+                             return true;
+                            
+                          }
+
+
+                          function changeP1(){
+                            document.getElementById("p1").innerText ="This is Javascript Day!";
+                          }
+                  </script>
+<head>
+
+
+</head>
+<body >
+           <P id="p1" onclick="changeP1()">Hello this is a Good  day!</P>
+           
+     <form name="myform" onsubmit="checkForm()"  >  [0]
+           Enter username : <input type="text" name="user" value="aaaaaaaaaaa"> </input><br/> [0]
+           Enter passsword : <input type="password" name="pwd" value="xxxxx"><br/>[1]
+           <input type="submit">,[2]
+
+     </form>
+
+
+
+</body>
+</html>
